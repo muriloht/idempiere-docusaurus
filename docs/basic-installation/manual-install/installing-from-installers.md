@@ -75,13 +75,15 @@ Optionally you can add a LOG LEVEL parameter (accepted values are: OFF, SEVERE, 
 
 You can fill the parameters as shown in the screenshot, or with your own preferred values, specially you must take care of the following:
 
-- iDempiere Home: This is the repository folder
-- Web Port / SSL: be careful to not use a port that is already used by another application, in linux ports below 1000 cannot be used by non-root users. For example port 8080 is used by Oracle-XE
-- DB Already Exists: in common installation you must leave this flag unchecked as the database will be created later
-- Database Name: here we fill with the name of the database you want to create
-- DB Admin Password: must be filled with the postgres password you set up in the [prerequisites](./install-prerequisites.md#assign-a-password-to-user-postgres)
-- Database User: this is a user to be created, it is recommended you keep it as the default adempiere
-- Database Password: fill here with the password you want to assign to the database
+<ul>
+  <li><strong>iDempiere Home:</strong> This is the repository folder</li>
+  <li><strong>Web Port / SSL:</strong> be careful to not use a port that is already used by another application, in linux ports below 1000 cannot be used by non-root users. For example port 8080 is used by Oracle-XE</li>
+  <li><strong>DB Already Exists:</strong> in common installation you must leave this flag unchecked as the database will be created later</li>
+  <li><strong>Database Name:</strong> here we fill with the name of the database you want to create</li>
+  <li><strong>DB Admin Password:</strong> must be filled with the postgres password you set up in the <a href="./install-prerequisites.md#assign-a-password-to-user-postgres">prerequisites</a></li>
+  <li><strong>Database User:</strong> this is a user to be created, it is recommended you keep it as the default adempiere</li>
+  <li><strong>Database Password:</strong> fill here with the password you want to assign to the database</li>
+</ul>
 
 ![iDempiere Server Setup](/img/docs/basic-installation/manual-install/Screenshot-iDempiere_Server_Setup.png)
 
@@ -93,13 +95,15 @@ The only *valid error* in red is in front of Database Password field when the da
 
 On oracle some fields must be filled slightly different:
 
-- Database Name: here you must fill the name of the oracle instance (usually xe or orcl)
-- DB Admin Password: must be filled with the SYSTEM password you set when installing oracle
-- Database User: in oracle you can define your preferred user here
-- Database Password: fill here with the password you want to assign to the database
-
+<ul>
+<li><strong>Database Name:</strong> here you must fill the name of the oracle instance (usually xe or orcl)</li>
+<li><strong>DB Admin Password:</strong> must be filled with the SYSTEM password you set when installing oracle</li>
+<li><strong>Database User:</strong> in oracle you can define your preferred user here</li>
+<li><strong>Database Password:</strong> fill here with the password you want to assign to the database</li>
+</ul>
 
   </TabItem>
+
   <TabItem value="console" label="Console">
 
 Run
