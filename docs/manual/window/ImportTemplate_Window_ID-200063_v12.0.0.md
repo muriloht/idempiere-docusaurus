@@ -1,0 +1,56 @@
+# Window: Import Template
+
+**[Created:** 29/10/2014 - **Updated:** 29/10/2014 **]**  
+**Description:**   
+**Help:**   
+![](/img/docs/manual/ImportTemplate-Window_iDempiere_v12.0.0.png)
+
+### Tab: Import Template
+
+**[Created:** 29/10/2014 - **Updated:** 29/10/2014 **]**   
+**Description:**   
+**Help:**   
+**Tab Level:** 0
+
+Table 10: Import Template - Fields 
+
+Table: Report Parameters
+| **Name** | **Description** | **Help** | **Technical Info** |
+|----------|---------------|-----------|--------------------|
+| Tenant | Tenant for this installation. | A Tenant is a company or a legal entity. You cannot share data between Tenants. | [ad_importtemplate](https://idempiere-schemaspy.muriloht.com/adempiere/tables/ad_importtemplate.html).AD_Client_ID<small> numeric(10) <br/> Table Direct</small> | 
+| Organization | Organizational entity within tenant | An organization is a unit of your tenant or legal entity - examples are store, department. You can share data between organizations. | [ad_importtemplate](https://idempiere-schemaspy.muriloht.com/adempiere/tables/ad_importtemplate.html).AD_Org_ID<small> numeric(10) <br/> Table Direct</small> | 
+| Name | Alphanumeric identifier of the entity | The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length. | [ad_importtemplate](https://idempiere-schemaspy.muriloht.com/adempiere/tables/ad_importtemplate.html).Name<small> character varying(60) <br/> String</small> | 
+| Description | Optional short description of the record | A description is limited to 255 characters. | [ad_importtemplate](https://idempiere-schemaspy.muriloht.com/adempiere/tables/ad_importtemplate.html).Description<small> character varying(255) <br/> String</small> | 
+| Window | Data entry or display window | The Window field identifies a unique Window in the system. | [ad_importtemplate](https://idempiere-schemaspy.muriloht.com/adempiere/tables/ad_importtemplate.html).AD_Window_ID<small> numeric(10) <br/> Table Direct</small> | 
+| Tab | Tab within a Window | The Tab indicates a tab that displays within a window. | [ad_importtemplate](https://idempiere-schemaspy.muriloht.com/adempiere/tables/ad_importtemplate.html).AD_Tab_ID<small> numeric(10) <br/> Table Direct</small> | 
+| Character Set |  |  | [ad_importtemplate](https://idempiere-schemaspy.muriloht.com/adempiere/tables/ad_importtemplate.html).CharacterSet<small> character varying(20) <br/> String</small> | 
+| Separator Character |  |  | [ad_importtemplate](https://idempiere-schemaspy.muriloht.com/adempiere/tables/ad_importtemplate.html).SeparatorChar<small> character varying(1) <br/> String</small> | 
+| Quote Char |  |  | [ad_importtemplate](https://idempiere-schemaspy.muriloht.com/adempiere/tables/ad_importtemplate.html).QuoteChar<small> character varying(1) <br/> String</small> | 
+| CSV Header |  |  | [ad_importtemplate](https://idempiere-schemaspy.muriloht.com/adempiere/tables/ad_importtemplate.html).CSVHeader<small> character varying(2000) <br/> String</small> | 
+| CSV Alias Header |  |  | [ad_importtemplate](https://idempiere-schemaspy.muriloht.com/adempiere/tables/ad_importtemplate.html).CSVAliasHeader<small> character varying(2000) <br/> String</small> | 
+| Import Template Type |  |  | [ad_importtemplate](https://idempiere-schemaspy.muriloht.com/adempiere/tables/ad_importtemplate.html).ImportTemplateType<small> character varying(4) <br/> List</small> | 
+| Active | The record is active in the system | There are two methods of making records unavailable in the system: One is to delete the record, the other is to de-activate the record. A de-activated record is not available for selection, but available for reports.There are two reasons for de-activating and not deleting records:(1) The system requires the record for audit purposes.(2) The record is referenced by other records. E.g., you cannot delete a Business Partner, if there are invoices for this partner record existing. You de-activate the Business Partner and prevent that this record is used for future entries. | [ad_importtemplate](https://idempiere-schemaspy.muriloht.com/adempiere/tables/ad_importtemplate.html).IsActive<small> character(1) <br/> Yes-No</small> | 
+
+
+### Tab: Import Template Access
+
+**[Created:** 29/10/2014 - **Updated:** 29/10/2014 **]**   
+**Description:**   
+**Help:**   
+**Tab Level:** 1
+
+Table 20: Import Template Access - Fields 
+
+Table: Report Parameters
+| **Name** | **Description** | **Help** | **Technical Info** |
+|----------|---------------|-----------|--------------------|
+| Tenant | Tenant for this installation. | A Tenant is a company or a legal entity. You cannot share data between Tenants. | [ad_importtemplateaccess](https://idempiere-schemaspy.muriloht.com/adempiere/tables/ad_importtemplateaccess.html).AD_Client_ID<small> numeric(10) <br/> Table Direct</small> | 
+| Organization | Organizational entity within tenant | An organization is a unit of your tenant or legal entity - examples are store, department. You can share data between organizations. | [ad_importtemplateaccess](https://idempiere-schemaspy.muriloht.com/adempiere/tables/ad_importtemplateaccess.html).AD_Org_ID<small> numeric(10) <br/> Table Direct</small> | 
+| Import Template |  |  | [ad_importtemplateaccess](https://idempiere-schemaspy.muriloht.com/adempiere/tables/ad_importtemplateaccess.html).AD_ImportTemplate_ID<small> numeric(10) <br/> Table Direct</small> | 
+| Role | Responsibility Role | The Role determines security and access a user who has this Role will have in the System. | [ad_importtemplateaccess](https://idempiere-schemaspy.muriloht.com/adempiere/tables/ad_importtemplateaccess.html).AD_Role_ID<small> numeric(10) <br/> Table Direct</small> | 
+| Allow Insert |  |  | [ad_importtemplateaccess](https://idempiere-schemaspy.muriloht.com/adempiere/tables/ad_importtemplateaccess.html).IsAllowInsert<small> character(1) <br/> Yes-No</small> | 
+| Allow Merge |  |  | [ad_importtemplateaccess](https://idempiere-schemaspy.muriloht.com/adempiere/tables/ad_importtemplateaccess.html).IsAllowMerge<small> character(1) <br/> Yes-No</small> | 
+| Allow Update |  |  | [ad_importtemplateaccess](https://idempiere-schemaspy.muriloht.com/adempiere/tables/ad_importtemplateaccess.html).IsAllowUpdate<small> character(1) <br/> Yes-No</small> | 
+| Active | The record is active in the system | There are two methods of making records unavailable in the system: One is to delete the record, the other is to de-activate the record. A de-activated record is not available for selection, but available for reports.There are two reasons for de-activating and not deleting records:(1) The system requires the record for audit purposes.(2) The record is referenced by other records. E.g., you cannot delete a Business Partner, if there are invoices for this partner record existing. You de-activate the Business Partner and prevent that this record is used for future entries. | [ad_importtemplateaccess](https://idempiere-schemaspy.muriloht.com/adempiere/tables/ad_importtemplateaccess.html).IsActive<small> character(1) <br/> Yes-No</small> | 
+
+

@@ -1,0 +1,8 @@
+{
+  "label": "Info Windows",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Available iDempiere Info Window list"
+  }
+}
